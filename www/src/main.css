@@ -126,4 +126,5 @@ a:link, a:visited, a:hover, a:active{
 }
 
 .clickable {
-cursor: pointer;}
+	cursor: pointer;
+}

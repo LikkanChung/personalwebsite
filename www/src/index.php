@@ -85,67 +85,92 @@
 			</div>
 			
 
-			<div class="container projects">
-				<h1 class="subtitle">Projects</h1>
-				<p>
-					Below are links to projects I have previosuly worked on. If you have any business enquiries, you can contact me via. email. 
-				</p>
-				<p>
-					My languages: 
-					<span class="language border border-success rounded">&nbsp;Visual Basic&nbsp;</span>
-					<span class="language border border-warning rounded ">&nbsp;Java&nbsp;</span>
-					<span class="language border border-warning rounded">&nbsp;HTML &amp; CSS&nbsp;</span> 
-					<span class="language border border-danger rounded ">&nbsp;PHP&nbsp;</span>
-					<span class="language border border-danger rounded ">&nbsp;OCaml&nbsp;</span>
-					<br>
-				</p>	
+			<div class="container">
+				<div class="projects">
+					<h1 class="subtitle">Projects</h1>
+					<p>
+						Below are links to professional projects I have previosuly worked on. If you have any business enquiries, you can contact me via. email. 
+					</p>
+					<p>
+						My languages: 
+						<span class="language border border-success rounded">&nbsp;Visual Basic&nbsp;</span>
+						<span class="language border border-warning rounded ">&nbsp;Java&nbsp;</span>
+						<span class="language border border-warning rounded">&nbsp;HTML &amp; CSS&nbsp;</span> 
+						<span class="language border border-danger rounded ">&nbsp;PHP&nbsp;</span>
+						<span class="language border border-danger rounded ">&nbsp;OCaml&nbsp;</span>
+						<br>
+					</p>	
 
-				<div class="card projectcard">
-					<a href="http://likkanchung.com" class="projectlink">
-						<img class="card-img-top projectimg" src="resources/projects/likkanchung.com/image.jpeg" alt="">
-						<div class="card-body">
-							<h1 class="card-title subtitle">likkanchung.com</h1>
-							<p>
-								<span class="language border border-warning rounded">&nbsp;HTML &amp; CSS&nbsp;</span>
-								<span class="language border border-danger rounded">&nbsp;PHP&nbsp;</span>
-								<span class="language border border-info rounded">&nbsp;Bootstrap&nbsp;</span>
-							</p>
-							<p class="card-text">This is the website you're on now! I created this as my personal portfolio to show my work.</p>
-							<p class="card-text">I've also used Bootstrap to help with styling this project.</p>
-						</div>
-						<div class="card-footer text-muted">Last Updated: Dec 2017</div>
-					</a>
+					<div class="card projectcard">
+						<a href="http://likkanchung.com" class="projectlink">
+							<img class="card-img-top projectimg" src="resources/projects/likkanchung.com/image.jpeg" alt="">
+							<div class="card-body">
+								<h1 class="card-title subtitle">likkanchung.com</h1>
+								<p>
+									<span class="language border border-warning rounded">&nbsp;HTML &amp; CSS&nbsp;</span>
+									<span class="language border border-danger rounded">&nbsp;PHP&nbsp;</span>
+									<span class="language border border-info rounded">&nbsp;Bootstrap&nbsp;</span>
+								</p>
+								<p class="card-text">This is the website you're on now! I created this as my personal portfolio to show my work.</p>
+								<p class="card-text">I've also used Bootstrap to help with styling this project.</p>
+							</div>
+							<div class="card-footer text-muted">Last Updated: Dec 2017</div>
+						</a>
+					</div>
+
+					<div class="card projectcard">
+						<a href="http://happygatheringcardiff.co.uk" class="projectlink">
+							<img class="card-img-top projectimg" src="resources/projects/happygatheringcardiff.co.uk/logo.jpg" alt="">
+							<div class="card-body">
+								<h1 class="card-title subtitle">happygatheringcardiff.co.uk</h1>
+								<p>
+									<span class="language border border-warning rounded">&nbsp;HTML &amp; CSS&nbsp;</span>
+									<span class="language border border-danger rounded">&nbsp;PHP&nbsp;</span>
+								</p>
+								<p class="card-text">Currently ongoing project</p>
+								<p class="card-text">The restaurant website is currently being updated and redesigned.</p>
+							</div>
+							<div class="card-footer text-muted">Jan 2018 - current</div>
+						</a>
+					</div>
 				</div>
+					
+				<br>	
+				<div class="portfolio">
+					<h1 class="subtitle">Portfolio</h1>
+					<p>
+						These are side or personal projects that I have worked on. Some of them are adapted from university assignments.
+					</p>
 
-				<div class="card projectcard">
-					<a href="http://happygatheringcardiff.co.uk" class="projectlink">
-						<img class="card-img-top projectimg" src="resources/projects/happygatheringcardiff.co.uk/logo.jpg" alt="">
-						<div class="card-body">
-							<h1 class="card-title subtitle">happygatheringcardiff.co.uk</h1>
-							<p>
-								<span class="language border border-warning rounded">&nbsp;HTML &amp; CSS&nbsp;</span>
-								<span class="language border border-danger rounded">&nbsp;PHP&nbsp;</span>
-							</p>
-							<p class="card-text">Currently ongoing project</p>
-							<p class="card-text">The restaurant website is currently being updated and redesigned.</p>
-						</div>
-						<div class="card-footer text-muted">Jan 2018 - current</div>
-					</a>
+					<div class="card projectcard">
+						<a href="" class="projectlink">
+							<img class="card-img-top projectimg" src="" alt="">
+							<div class="card-body">
+								<h1 class="card-title subtitle">Server-Client Messaging</h1>
+								<p>
+									<span class="language border border-warning rounded">&nbsp;Java&nbsp;</span>
+								</p>
+								<p class="card-text">Univerity Assignment. The task was to implement a system to send and receive messages between a server and multiple clients</p>
+							</div>
+							<div class="card-footer text-muted">Completed: Feb 2018</div>
+						</a>
+					</div>
 				</div>
+				
 
-				<!--<div class="card projectcard">
-					<a href="http://kieranmason.co.uk" class="projectlink">
-						<img class="card-img-top projectimg" src="resources/km.jpg" alt="">
-						<div class="card-body">
-							<h1 class="card-title subtitle">memes</h1>
-							<p>
-								<span class="language border border-info rounded">&nbsp;Photoshop&nbsp;</span>
-							</p>
-							<p class="card-text">Look at this wonderful specimen of a human.</p>
-						</div>
-						<div class="card-footer text-muted">Completed: Dec 2017</div>
-					</a>
-				</div>-->
+					<!--<div class="card projectcard">
+						<a href="http://kieranmason.co.uk" class="projectlink">
+							<img class="card-img-top projectimg" src="resources/km.jpg" alt="">
+							<div class="card-body">
+								<h1 class="card-title subtitle">memes</h1>
+								<p>
+									<span class="language border border-info rounded">&nbsp;Photoshop&nbsp;</span>
+								</p>
+								<p class="card-text">Look at this wonderful specimen of a human.</p>
+							</div>
+							<div class="card-footer text-muted">Completed: Dec 2017</div>
+						</a>
+					</div>-->
 			
 
 			</div>
