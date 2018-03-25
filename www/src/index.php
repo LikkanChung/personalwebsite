@@ -150,7 +150,10 @@
 								<p>
 									<span class="language border border-warning rounded">&nbsp;Java&nbsp;</span>
 								</p>
-								<p class="card-text">Univerity Assignment. The task was to implement a system to send and receive messages between a server and multiple clients</p>
+								<p class="card-text">
+									<b>This project will be soon have an online demo. </b><br>
+									Univerity Assignment. The task was to implement a system to send and receive messages between a server and multiple clients.
+								</p>
 							</div>
 							<div class="card-footer text-muted">Completed: Feb 2018</div>
 						</a>
