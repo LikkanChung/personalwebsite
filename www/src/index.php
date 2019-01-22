@@ -2,22 +2,7 @@
 <!doctype html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-		<meta property="og:url" content="http://likkanchung.com">
-		<meta property="og:title" content="Lik Kan Chung">
-		<meta property="og:type" content="website">
-		<meta property="og:description" content="Computer Science student at University of Birmingham. Take a look at my portfolio at likkanchung.com">
-		<meta property="og:image" content="http://likkanchung.com/resources/projects/likkanchung.com/image.jpeg">
-
-		<title>Lik Kan Chung</title>
-		<link rel="icon" href="favicon.ico">
-		
-		<!-- Using Bootstrap -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-		<link rel="stylesheet" href="main.css?<?=filemtime('main.css');?>">
-
+		<?php require_once('php/head.php'); ?>
 	</head>
 
 	<body>
@@ -37,9 +22,9 @@
 			<div class="container about" id="about">
 				<h1 class="subtitle">About</h1>
 				<p>
-					My name is Lik Kan, also spelt "Likkan" casually. I am <?=intval(date('Y', time() - strtotime('1999-03-21'))) - 1970;?> years old and currently studying Computer Science.<br>
+					My name is Lik Kan, also spelt "Likkan" casually. I am <?=intval(date('Y', time() - strtotime('1999-03-21'))) - 1970;?> years old and currently a second year student.<br>
 					<br>
-					Long story short: I've been a computer enthusiast for a long time and I have always wanted to make my own programs and build my own systems. I study well with A*s in maths and science at GCSE and grades AAB at A Level. I was in the school's Head Team so I know how to work in a team and I work well individually too - I managed all of the team's email and Twitter side. Now I'm studying Computer Science at the University of Birmingham.       
+					Long story short: I've been a computer enthusiast for a long time and I have always wanted to make my own programs and build my own systems. I study well with A*s in maths and science at GCSE and grades AAB at A Level. I was in the school's Head Team so I know how to work in a team and I work well individually too - I managed all of the team's email and Twitter side. Now I'm studying Computer Science at the University of Birmingham. I'm also a student ambassaor, for the department and I represent the school at different events.      
 				</p>
 			</div>		
 
@@ -49,35 +34,7 @@
 					Here's some statistics about me:
 				</p>
 				<div class="collapse" id="statshidden">
-					<p>
-						Seconaday Education Exam Grades:
-					</p>	
-						A Level (2017):
-						<ul> 
-							<li>A - Computer Science</li>
-							<li>A - Physics</li>
-							<li>B - Mathematics</li>
-						</ul>
-						AS (2016):
-						<ul> 
-							<li>C - German</li>					
-						</ul>
-						GCSE (2014-15):
-						<ul> 
-							<li>5A* - Computer Science, Maths, Biology, Chemistry, Physics</li>
-							<li>4A - English Literature and Language, Geography, Design Technology</li>
-							<li>2B - French, German</li>
-							<li>2B Short Course - Religious Studies, Welsh Second Language</li>
-							<li>Merit in Level 2 Additional Mathematics</li>
-							<li>Merit in BTEC Level 2 Engineering</li>
-						</ul>
-					
-					<p>
-						Other miscellaneous qualifications:
-						<ul>
-							<li>Full UK Driving Licence with Pass Plus </li>
-						</ul>
-					</p>
+					<?php require_once('php/stats.php'); ?>
 					
 				</div>
 					<button type="button" class="btn btn-outline-secondary" data-toggle="collapse" data-target="#statshidden">Show/Hide Stats</button>
@@ -92,12 +49,21 @@
 						Below are links to professional projects I have previosuly worked on. If you have any business enquiries, you can contact me via. email. 
 					</p>
 					<p>
-						My languages: 
-						<span class="language border border-success rounded">&nbsp;Visual Basic&nbsp;</span>
+						My languages and technologies: 
+						<?php include('languages/vb.php'); ?>
+						<?php include('languages/java.php'); ?>
+						<?php include('languages/python.php'); ?>
+						<?php include('languages/html-css.php'); ?>
+						<?php include('languages/git.php'); ?>
+						<?php include('languages/ocaml.php'); ?>
+						<?php include('languages/php.php'); ?>
+						<?php include('languages/c-cpp.php'); ?>
+
+	<!-- 					<span class="language border border-success rounded">&nbsp;Visual Basic&nbsp;</span>
 						<span class="language border border-warning rounded ">&nbsp;Java&nbsp;</span>
 						<span class="language border border-warning rounded">&nbsp;HTML &amp; CSS&nbsp;</span> 
 						<span class="language border border-danger rounded ">&nbsp;PHP&nbsp;</span>
-						<span class="language border border-danger rounded ">&nbsp;OCaml&nbsp;</span>
+						<span class="language border border-danger rounded ">&nbsp;OCaml&nbsp;</span> -->
 						<br>
 					</p>	
 
@@ -107,14 +73,15 @@
 							<div class="card-body">
 								<h1 class="card-title subtitle">likkanchung.com</h1>
 								<p>
-									<span class="language border border-warning rounded">&nbsp;HTML &amp; CSS&nbsp;</span>
-									<span class="language border border-danger rounded">&nbsp;PHP&nbsp;</span>
+									<?php include('languages/html-css.php'); ?>
+									<?php include('languages/php.php'); ?>
 									<span class="language border border-info rounded">&nbsp;Bootstrap&nbsp;</span>
+									<?php include('languages/git.php'); ?>
 								</p>
 								<p class="card-text">This is the website you're on now! I created this as my personal portfolio to show my work.</p>
 								<p class="card-text">I've also used Bootstrap to help with styling this project.</p>
 							</div>
-							<div class="card-footer text-muted">Last Updated: Dec 2017</div>
+							<div class="card-footer text-muted">Last Updated: Jan 2019</div>
 						</a>
 					</div>
 
@@ -124,8 +91,9 @@
 							<div class="card-body">
 								<h1 class="card-title subtitle">happygatheringcardiff.co.uk</h1>
 								<p>
-									<span class="language border border-warning rounded">&nbsp;HTML &amp; CSS&nbsp;</span>
-									<span class="language border border-danger rounded">&nbsp;PHP&nbsp;</span>
+									<?php include('languages/html-css.php'); ?>
+									<?php include('languages/php.php'); ?>
+									<?php include('languages/git.php'); ?>
 								</p>
 								<p class="card-text">Currently ongoing project</p>
 								<p class="card-text">The restaurant website is currently being updated and redesigned.</p>
@@ -135,7 +103,7 @@
 					</div>
 				</div>
 					
-				<br>	
+<!-- 				<br>	
 				<div class="portfolio">
 					<h1 class="subtitle">Portfolio</h1>
 					<p>
@@ -158,7 +126,7 @@
 							<div class="card-footer text-muted">Completed: Feb 2018</div>
 						</a>
 					</div>
-				</div>
+				</div> -->
 				
 
 					<!--<div class="card projectcard">
