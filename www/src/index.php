@@ -143,10 +143,21 @@
 						</a>
 					</div>-->
 			
+			<div class="container interests">
+				<h1 class="subtitle">Interests</h1>
+				<p>
+					<strong>Computer Science Society (CSS)</strong> <em>2019-20</em>
+					<ul>
+						<li>Publicty Repesentative to the committee</li>
+						<li>Advertise and promote CSS events to members of the society</li>
+						<li>Using social media channels such as Facebook, Twitter and Instagram to publicise events</li>
+					</ul>
+				</p>
+			</div>
+
 
 			</div>
 
-			
 			<div class="container contact">
 				<div class="contactlogo">
 					<a href="http://twitter.com/LikkanChung"><img class="contactimg" src="resources/twitter.png" alt="Twitter/@LikkanChung"></a>
