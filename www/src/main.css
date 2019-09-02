@@ -105,6 +105,13 @@ p {
 	vertical-align: top;
 }
 
+.project-footer-link {
+	float: right;
+	height: 1.5em;
+	width: 1.5em;
+	transform: translateX(1.5em);
+}
+
 .projectimg {
 	object-fit: cover;
 	height: 11rem;

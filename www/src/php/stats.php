@@ -1,6 +1,9 @@
 <p>	
 	Univeristy of Birmingham:
 	<ul>	
+		<li>Second Year (2018-19): 66% (2.1) <br>
+			<em>Team Project, Natural Language Processing, Professional Computing, Introduction to Computer Security, C/C++, Computer Systems and Architecture, Introductory Databases, Graphics, Mathematical Techniques for Computer Science, Models of Computation, Reasoning</em>
+		</li>
 		<li>First Year (2017-18): 66% (2.1) <br>
 			<em>Robot Programming, Language and Logic, Software Workshop (Java), Introduction to Software Engineering, Data Structures and Algorithms, Elements of Functional Computing, Introduction to AI, Introduction to Mathematics (Widening Horizons)</em>
 		</li>

@@ -1,1 +1,1 @@
-<span class="language border border-danger rounded ">&nbsp;PHP&nbsp;</span>
+<span class="language border border-warning rounded ">&nbsp;PHP&nbsp;</span>
