@@ -1,1 +1,0 @@
-<span class="language border border-warning rounded">&nbsp;OCaml&nbsp;</span> 

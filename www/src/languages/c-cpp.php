@@ -1,1 +1,0 @@
-<span class="language border border-warning rounded ">&nbsp;C&nbsp;&amp;&nbsp;C++&nbsp;</span>
