@@ -1,0 +1,17 @@
+---
+layout: default
+title: Blogs
+#
+---
+
+<h1>Blogs</h1>
+
+<ul>
+  {% assign blogs = site.blogs | reverse %}
+  {% for item in blogs %}
+    <li>
+      <h2><a href="{{item.url}}">{{item.title}}</a></h2>
+      <p>{{item.excerpt | markdownify}}</p>
+    </li>
+  {% endfor %}
+</ul>

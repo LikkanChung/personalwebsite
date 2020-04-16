@@ -5,8 +5,11 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarToggle">
     <div class="navbar-nav">
+
       {% for item in site.data.navigation %}
-        <a href="{{item.link}}" class="nav-item nav-link {% if page.url == item.link %}active{% endif %}">{{item.name}}</a>
+        {% assign pageurl = page.url | replace:'/',' ' | truncatewords:1,"" | remove:".html" %}
+        {% assign itemurl = item.link | replace:'/',' ' | truncatewords:1,"" | remove:".html" %}
+        <a href="{{item.link}}" class="nav-item nav-link {% if itemurl == pageurl %}active{% endif %}">{{item.name}}</a>
       {% endfor %}
     </div>
   </div>
