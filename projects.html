@@ -7,9 +7,11 @@ title: Projects
 <h1>Projects</h1>
 
 <ul>
-  {% for post in site.posts %}
+  {% assign projects = site.projects | reverse %}
+  {% for project in projects %}
     <li>
-      <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+      <h2><a href="{{project.url}}">{{project.title}}</a></h2>
+      <p>{{project.excerpt | markdownify}}</p>
     </li>
   {% endfor %}
 </ul>
