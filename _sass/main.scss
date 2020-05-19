@@ -4,24 +4,47 @@ html, body {
 
 body {
 
-}
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), white),url("/assets/img/cover.jpg");
 
-.hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), white),url("/assets/img/cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+  }
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  position: relative;
-}
+  .hero-content {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 
-.hero-content {
-  text-align: center;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+    img {
+      height: 25vh;
+      width: 25vh;
+      border-radius: 50%;
+    }
 
+    h1 {
+      margin-top: 1em;
+    }
+
+    h2 {
+      margin-top: 0.5em;
+    }
+  }
+
+  .home-section {
+    margin-top: 1rem;
+    border-top: 1px solid black;
+    padding-top: 1rem;
+  }
+
+  footer {
+    color: rgba(255,255,255,.5);
+    padding: 0.5rem;
+  }
 }
