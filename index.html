@@ -21,6 +21,11 @@ title: Likkan Chung
 
 <div class="container home-section cv">
   <h1>CV</h1>
+  <ul>
+      {% for item in site.data.cv.education %}
+      <li>{{ item.name }}</li>
+      {% endfor %}
+  </ul>
 </div>
 
 <div class="container home-section projects">
