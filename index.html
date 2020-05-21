@@ -21,10 +21,25 @@ title: Likkan Chung
 
 <div class="container home-section cv">
   <h1>CV</h1>
+  <p>This is a brief outline of what I have done. The <a href="cv.html">CV</a> page lists out all of these in more detail.</p>
+  <h2>Education</h2>
+  {% assign cv = site.data.cv %}
   <ul>
-      {% for item in site.data.cv.education %}
-      <li>{{ item.name }}</li>
-      {% endfor %}
+    {% for item in cv.education %}
+      <li><b>{{ item.name }},</b> {{ item.school }}</li>
+    {% endfor %}
+  </ul>
+  <h2>Work Experience</h2>
+  <ul>
+    {% for item in cv.employment %}
+      <li><b>{{ item.role }},</b> {{ item.location }}</li>
+    {% endfor %}
+  </ul>
+  <h2>Volunteering</h2>
+  <ul>
+    {% for item in cv.volunteering %}
+      <li><b>{{ item.role }},</b> {{ item.location }}</li>
+    {% endfor %}
   </ul>
 </div>
 
