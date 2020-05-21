@@ -63,17 +63,34 @@ title: Likkan Chung
 
 <div class="container home-section projects">
   <h1>Projects</h1>
+  <ul>
+    {% assign projects = site.projects | reverse %}
+    {% for i in (0..4) %}
+      {% assign s = projects | size %}
+      {% if i < s %}
+        {% assign post = projects[i] %}
+        <li>
+          <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+          <p>{{post.date | date: "%b %Y"}}</p>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </div>
 
 <div class="container home-section blog">
   <h1>Blogs</h1>
   <ul>
     {% assign blogs = site.blogs | reverse %}
-    {% for post in blogs %}
-      <li>
-        <h2><a href="{{post.url}}">{{post.title}}</a></h2>
-        <p>{{post.date}}</p>
-      </li>
+    {% for i in (0..4) %}
+      {% assign s = blogs | size %}
+      {% if i < s %}
+        {% assign post = blogs[i] %}
+        <li>
+          <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+          <p>{{post.date | date: "%a, %b %d, %Y"}}</p>
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
