@@ -26,22 +26,37 @@ title: Likkan Chung
   <h2>Education</h2>
   {% assign cv = site.data.cv %}
   <ul>
-    {% for item in cv.education %}
-      <li><b>{{ item.name }},</b> {{ item.school }}</li>
+    {% assign items = cv.education %}
+    {% for i in (0..4) %}
+      {% assign s = items | size %}
+      {% if i < s %}
+        {% assign item = items[i] %}
+        <li><b>{{ item.name }},</b> {{ item.school }}</li>
+      {% endif %}
     {% endfor %}
   </ul>
 
   <h2>Work Experience</h2>
   <ul>
-    {% for item in cv.employment %}
-      <li><b>{{ item.role }},</b> {{ item.location }}</li>
+    {% assign items = cv.employment %}
+    {% for i in (0..4) %}
+      {% assign s = items | size %}
+      {% if i < s %}
+        {% assign item = items[i] %}
+        <li><b>{{ item.role }},</b> {{ item.location }}</li>
+      {% endif %}
     {% endfor %}
   </ul>
 
   <h2>Volunteering</h2>
   <ul>
-    {% for item in cv.volunteering %}
-      <li><b>{{ item.role }},</b> {{ item.location }}</li>
+    {% assign items = cv.volunteering %}
+    {% for i in (0..4) %}
+      {% assign s = items | size %}
+      {% if i < s %}
+        {% assign item = items[i] %}
+        <li><b>{{ item.role }},</b> {{ item.location }}</li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
