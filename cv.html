@@ -3,5 +3,154 @@ layout: default
 title: CV - Likkan Chung
 #
 ---
+<div class="page">
+  <div class="container header-title">
+    <h1>{{site.title}}</h1>
+  </div>
 
-<h1>CV</h1>
+  <div class="container cv-contact">
+    <ul>
+      <li><h6>Email: {{site.email}}</h6></li>
+      <li><h6>GitHub: {{site.github_username}}</h6></li>
+      <li><h6>Website: {{site.url}}</h6></li>
+    </ul>
+  </div>
+
+  <div class="container cv-education">
+    <h2>Education</h2>
+    {% assign education = site.data.cv.education %}
+    {% for item in education %}
+      <div class="card cv-card">
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ item.school }}</h6>
+          <h6 class="card-subtitle mb-2 text-muted">{{ item.start }} - {{ item.end }}</h6>
+          <p class="card-text">
+            {% if item.points %}
+              <ul>
+                {% for point in item.points %}
+                  <li>
+                    {{ point.point }}
+                    {% if point.subpoints %}
+                      <ul>
+                        {% for subpoint in point.subpoints %}
+                          <li>{{ subpoint.subpoint}}</li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="container cv-employment">
+    <h2>Work Experience</h2>
+      <row>
+        <div class="card-deck">
+          {% assign employment = site.data.cv.employment %}
+          {% assign i = employment | size | minus: 1 %}
+          {% for j in (0..i) %}
+            {% assign col-left-right = "" %}
+            {% assign k = j | modulo: 2 %}
+            {% if k == 0 %}
+              {% assign col-left-right = "card-left" %}
+            {% else if k == 1 %}
+              {% assign col-left-right = "card-right" %}
+            {% endif %}
+            {% assign item = employment[j] %}
+            <div class="col-6 cv-col {{col-left-right}}">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">{{ item.role }}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">{{ item.location }}</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">{{ item.start }} - {{ item.end }}</h6>
+                  <p class="card-text">
+                    {% if item.points %}
+                      <ul>
+                        {% for point in item.points %}
+                          <li>
+                            {{ point.point }}
+                            {% if point.subpoints %}
+                              <ul>
+                                {% for subpoint in point.subpoints %}
+                                  <li>{{ subpoint.subpoint}}</li>
+                                {% endfor %}
+                              </ul>
+                            {% endif %}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </p>
+                </div>
+              </div>
+            </div>
+            {% if k == 1 and j != i%}
+                </div>
+              </row>
+              <row>
+                <div class="card-deck">
+            {% endif %}
+          {% endfor %}
+        </div>
+      </row>
+  </div>
+
+  <div class="container cv-volunteering">
+    <h2>Volunteering</h2>
+    <row>
+      <div class="card-deck">
+        {% assign volunteering = site.data.cv.volunteering %}
+        {% assign i = volunteering | size | minus: 1 %}
+        {% for j in (0..i) %}
+          {% assign col-left-right = "" %}
+          {% assign k = j | modulo: 2 %}
+          {% if k == 0 %}
+            {% assign col-left-right = "card-left" %}
+          {% else if k == 1 %}
+            {% assign col-left-right = "card-right" %}
+          {% endif %}
+          {% assign item = volunteering[j] %}
+          <div class="col-6 cv-col {{col-left-right}}">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">{{ item.role }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ item.location }}</h6>
+                <h6 class="card-subtitle mb-2 text-muted">{{ item.start }} - {{ item.end }}</h6>
+                <p class="card-text">
+                  {% if item.points %}
+                    <ul>
+                      {% for point in item.points %}
+                        <li>
+                          {{ point.point }}
+                          {% if point.subpoints %}
+                            <ul>
+                              {% for subpoint in point.subpoints %}
+                                <li>{{ subpoint.subpoint}}</li>
+                              {% endfor %}
+                            </ul>
+                          {% endif %}
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </p>
+              </div>
+            </div>
+          </div>
+          {% if k == 1 and j != i%}
+              </div>
+            </row>
+            <row>
+              <div class="card-deck">
+          {% endif %}
+        {% endfor %}
+      </div>
+    </row>
+  </div>
+</div>

@@ -4,14 +4,20 @@ title: Blogs
 #
 ---
 
-<h1>Blogs</h1>
+<div class="page">
+  <div class="container header-title">
+    <h1>Blogs</h1>
+  </div>
 
-<ul>
-  {% assign blogs = site.blogs | reverse %}
-  {% for item in blogs %}
-    <li>
-      <h2><a href="{{item.url}}">{{item.title}}</a></h2>
-      <p>{{item.excerpt | markdownify}}</p>
-    </li>
-  {% endfor %}
-</ul>
+  <div class="container page-section">
+    <ul>
+      {% assign blogs = site.blogs | reverse %}
+      {% for item in blogs %}
+        <li>
+          <h2><a href="{{item.url}}">{{item.title}}</a></h2>
+          <p>{{item.excerpt | markdownify}}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

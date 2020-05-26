@@ -24,7 +24,7 @@ email: contact@likkanchung.com
 description: >- # this means to ignore newlines until "baseurl:"
   Computer Science Student
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://likkanchung.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: LikkanChung
 github_username:  LikkanChung
 about: |
