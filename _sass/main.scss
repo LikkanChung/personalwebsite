@@ -41,6 +41,25 @@ body {
     margin-top: 1rem;
     border-top: 1px solid black;
     padding-top: 1rem;
+
+
+  }
+
+  .home-section-projects {
+    .carousel-card {
+      display: inline-block;
+      width: auto;
+      .carousel-card-left {
+      }
+
+      .carousel-card-centre {
+
+      }
+
+      .carousel-card-right {
+
+      }
+    }
   }
 
   .page {
@@ -52,6 +71,10 @@ body {
       h2 {
         margin-top: 1rem;
         margin-bottom: 1rem;
+      }
+
+      .page-card-link {
+        text-decoration: none;
       }
     }
 

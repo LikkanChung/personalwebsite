@@ -10,14 +10,19 @@ title: Projects
   </div>
 
   <div class="container page-section">
-    <ul>
-      {% assign projects = site.projects | reverse %}
-      {% for project in projects %}
-        <li>
-          <h2><a href="{{project.url}}">{{project.title}}</a></h2>
-          <p>{{project.excerpt | markdownify}}</p>
-        </li>
-      {% endfor %}
-    </ul>
+    {% assign projects = site.projects | reverse %}
+    {% for item in projects %}
+      <a href="{{item.url}}" class="page-card-link text-dark">
+        <div class="card cv-card">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ item.date }}</h6>
+            <p class="card-text">
+              {{ item.excerpt }}
+            </p>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
   </div>
 </div>

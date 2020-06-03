@@ -10,14 +10,19 @@ title: Blogs
   </div>
 
   <div class="container page-section">
-    <ul>
-      {% assign blogs = site.blogs | reverse %}
-      {% for item in blogs %}
-        <li>
-          <h2><a href="{{item.url}}">{{item.title}}</a></h2>
-          <p>{{item.excerpt | markdownify}}</p>
-        </li>
-      {% endfor %}
-    </ul>
+    {% assign blogs = site.blogs | reverse %}
+    {% for item in blogs %}
+      <a href="{{item.url}}" class="page-card-link text-dark">
+        <div class="card cv-card">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ item.date }}</h6>
+            <p class="card-text">
+              {{ item.excerpt }}
+            </p>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
   </div>
 </div>
