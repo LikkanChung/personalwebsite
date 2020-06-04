@@ -42,10 +42,31 @@ body {
     border-top: 1px solid black;
     padding-top: 1rem;
 
+    .card-link {
+      text-decoration: none;
+    }
 
   }
 
   .home-section-projects {
+    .carousel-card {
+      display: inline-block;
+      width: auto;
+
+      .carousel-card-left {
+      }
+
+      .carousel-card-centre {
+
+      }
+
+      .carousel-card-right {
+
+      }
+    }
+  }
+
+  .home-section-blogs {
     .carousel-card {
       display: inline-block;
       width: auto;
@@ -119,8 +140,13 @@ body {
 
   }
 
-  footer {
-    color: rgba(255,255,255,.5);
-    padding: 0.5rem;
+  .footer-div {
+    margin-top: 5vh;
+
+    footer {
+      color: rgba(255,255,255,.5);
+      padding: 0.5rem;
+    }
+
   }
 }

@@ -68,8 +68,8 @@ title: Likkan Chung
         <h1>Projects</h1>
       </div>
       <div class="col-6 text-md-right lead">
-        {% assign projects = site.projects | reverse %}
-        {% assign projsize = projects | size | minus: 0 %}
+        {% assign projects = site.projects | sort: "date" | reverse %}
+        {% assign projsize = projects | size | minus: 0 | at_most: 9 %}
         {% if projsize > 3 %}
           <a href="#projects-carousel" class="btn btn-outline-secondary carousel-control" role="button" data-slide="prev"><</a>
           <a href="#projects-carousel" class="btn btn-outline-secondary carousel-control" role="button" data-slide="next">></a>
@@ -91,19 +91,39 @@ title: Likkan Chung
         <div class="card-deck">
 
               {% endif %}
+
               <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">{{post.title}}</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">{{post.date | date: "%b %Y"}}</h6>
-                  <p class="card-text">
-                    {{post.excerpt | truncate: 200 }}
-                  </p>
-                </div>
+                <a href="{{post.url}}" class="card-link text-dark">
+                  <div class="card-body">
+                    <h5 class="card-title">{{post.title}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{post.date | date: "%b %Y"}}</h6>
+                    <p class="card-text">
+                      {{post.excerpt | truncate: 200 }}
+                    </p>
+                  </div>
+                </a>
               </div>
+
             {% endif %}
           {% endfor %}
         </div>
       </div>
+      {% if projsize == 9 %}
+        <div class="carousel-item">
+          <div class="card-deck">
+            <div class="card">
+              <a href="projects.html" class="card-link text-dark">
+                <div class="card-body">
+                  <h5 class="card-title">More Projects...</h5>
+                  <p class="card-text">
+                    Click here to find more Projects...
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>
@@ -115,8 +135,8 @@ title: Likkan Chung
         <h1>Blogs</h1>
       </div>
       <div class="col-6 text-md-right lead">
-        {% assign blogs = site.blogs | reverse %}
-        {% assign blogsize = blogs | size | minus: 0 %}
+        {% assign blogs = site.blogs | sort: "date" | reverse %}
+        {% assign blogsize = blogs | size | minus: 0 | at_most: 9 %}
         {% if blogsize > 3 %}
           <a href="#blogs-carousel" class="btn btn-outline-secondary carousel-control" role="button" data-slide="prev"><</a>
           <a href="#blogs-carousel" class="btn btn-outline-secondary carousel-control" role="button" data-slide="next">></a>
@@ -139,19 +159,39 @@ title: Likkan Chung
         <div class="card-deck">
 
               {% endif %}
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">{{post.title}}</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">{{post.date | date: "%b %Y"}}</h6>
-                  <p class="card-text">
-                    {{post.excerpt | truncate: 200 }}
-                  </p>
+
+                <div class="card">
+                  <a href="{{post.url}}" class="card-link text-dark">
+                    <div class="card-body">
+                      <h5 class="card-title">{{post.title}}</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">{{post.date | date: "%A, %e %B %Y"}}</h6>
+                      <p class="card-text">
+                        {{post.excerpt | truncate: 200 }}
+                      </p>
+                    </div>
+                  </a>
                 </div>
-              </div>
+
             {% endif %}
           {% endfor %}
         </div>
       </div>
+      {% if blogsize == 9 %}
+        <div class="carousel-item">
+          <div class="card-deck">
+            <div class="card">
+              <a href="blogs.html" class="card-link text-dark">
+                <div class="card-body">
+                  <h5 class="card-title">More Blog Posts...</h5>
+                  <p class="card-text">
+                    Click here to find more Blog Posts...
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>

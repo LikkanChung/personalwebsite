@@ -10,13 +10,13 @@ title: Projects
   </div>
 
   <div class="container page-section">
-    {% assign projects = site.projects | reverse %}
+    {% assign projects = site.projects | sort: "date" | reverse %}
     {% for item in projects %}
       <a href="{{item.url}}" class="page-card-link text-dark">
         <div class="card cv-card">
           <div class="card-body">
             <h5 class="card-title">{{ item.title }}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">{{ item.date }}</h6>
+            <h6 class="card-subtitle mb-2 text-muted">{{ item.date | date: "%B %Y" }}</h6>
             <p class="card-text">
               {{ item.excerpt }}
             </p>
