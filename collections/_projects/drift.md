@@ -8,6 +8,8 @@ This is Drift - an Internet of Things system which helps with your sleep. This p
 
 This project focuses on the earlier stages of software design - from generating initial ideas through to hi-fi prototyping.
 
+{% include slideshow.html set="drift" %}
+
 ## The Product:
 
 Having initially thought of several ideas which could be solved with IoT, such as Attendance Registration, Car Parks, and even Tea; we decided to focus on creating a product which would help users with sleep problems to have better quality and quantity of sleep. There already exist many tools which help with sleep, but we have found that none of them are well integrated together and many people do not use them to improve their sleep.
