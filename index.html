@@ -15,15 +15,15 @@ title: Likkan Chung
 </div>
 
 <div class="container home-section about">
-  <h1>About Me</h1>
+  <h2>About Me</h2>
   <p>{{site.about}}</p>
 </div>
 
 <div class="container home-section cv">
-  <h1>CV</h1>
+  <h2>CV</h2>
   <p>This is a brief outline of what I have done. The <a href="cv.html">CV</a> page lists out all of these in more detail.</p>
 
-  <h2>Education</h2>
+  <h3>Education</h3>
   {% assign cv = site.data.cv %}
   <ul>
     {% assign items = cv.education %}
@@ -36,7 +36,7 @@ title: Likkan Chung
     {% endfor %}
   </ul>
 
-  <h2>Work Experience</h2>
+  <h3>Work Experience</h3>
   <ul>
     {% assign items = cv.employment %}
     {% for i in (0..4) %}
@@ -48,7 +48,7 @@ title: Likkan Chung
     {% endfor %}
   </ul>
 
-  <h2>Volunteering</h2>
+  <h3>Volunteering</h3>
   <ul>
     {% assign items = cv.volunteering %}
     {% for i in (0..4) %}
@@ -65,9 +65,9 @@ title: Likkan Chung
   <div class="carousel slide" data-ride="carousel" id="projects-carousel">
     <div class="row">
       <div class="col-6">
-        <h1>Projects</h1>
+        <h2>Projects</h2>
       </div>
-      <div class="col-6 text-md-right lead">
+      <div class="col-6 text-md-right lead carousel-buttons">
         {% assign projects = site.projects | sort: "date" | reverse %}
         {% assign projsize = projects | size | minus: 0 | at_most: 9 %}
         {% if projsize > 3 %}
@@ -132,9 +132,9 @@ title: Likkan Chung
   <div class="carousel slide" data-ride="carousel" id="blogs-carousel">
     <div class="row">
       <div class="col-6">
-        <h1>Blogs</h1>
+        <h2>Blogs</h2>
       </div>
-      <div class="col-6 text-md-right lead">
+      <div class="col-6 text-md-right lead carousel-buttons">
         {% assign blogs = site.blogs | sort: "date" | reverse %}
         {% assign blogsize = blogs | size | minus: 0 | at_most: 9 %}
         {% if blogsize > 3 %}
