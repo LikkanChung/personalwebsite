@@ -84,18 +84,6 @@ body {
     .carousel-card {
       display: inline-block;
       width: auto;
-
-      .carousel-card-left {
-
-      }
-
-      .carousel-card-centre {
-
-      }
-
-      .carousel-card-right {
-
-      }
     }
   }
 
@@ -103,16 +91,6 @@ body {
     .carousel-card {
       display: inline-block;
       width: auto;
-      .carousel-card-left {
-      }
-
-      .carousel-card-centre {
-
-      }
-
-      .carousel-card-right {
-
-      }
     }
   }
 
@@ -134,6 +112,10 @@ body {
 
     .header-title {
       margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .page-section {
       margin-bottom: 2rem;
     }
 
