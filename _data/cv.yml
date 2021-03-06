@@ -1,0 +1,115 @@
+education:
+  - name: MSci Computer Science with Year in Industry
+    school: University of Birmingham
+    location: Birmingham, England
+    start: Sept. 2017
+    end: July 2022
+    points:
+      - point: "Average Grade Attained: 2.1"
+      - point: "Modules Studied include:"
+        subpoints:
+          - subpoint: "<b>Teamwork:</b> Team Project, Professional Computing, Robot Programming"
+          - subpoint: "<b>Programming:</b> C/C++, Java Programming, Functional Computing"
+          - subpoint: >
+              "<b>Theoretical:</b> Computer Systems and Architecture,
+              Data Structures and Algorithms, Databases, Reasoning,
+              Aritificial Intelligence, Graphics, Network, Network Security,
+              Computer Security"
+  - name: Secondary Education
+    school: Porthcawl Comprehensive School
+    location: Bridgend, Wales
+    start: Sept. 2010
+    end: June 2017
+    points:
+      - point: "<b>A Level: AAB</b><br>Computer Science, Physics, Mathematics"
+      - point: "<b>AS Level: C</b> - German"
+      - point: "<b>GCSE: 5A*, 4A, 2B, 2B Short Course</b>"
+      - point: Level 3 Essential Skills Wales in Communication
+      - point: Level 2 Merit Additional Mathematics
+      - point: Level 2 Merit BTEC Engineering
+employment:
+  - role: Service Desk Technical Analyst
+    location: CGI Waterton, Bridgend
+    start: May 2020
+    end: July 2020
+  - role: Student Ambassador
+    location: School of Computer Science, University of Birmingham
+    start: Sept. 2018
+    end: Present
+    points:
+      - point: >
+          Communicating with prospective students about the computer science course
+          and the University, representing the student experience
+      - point: >
+          Helping to set up events and conducting tours of the school and campus,
+          and assisting students where necessary
+      - point: >
+          Engaging in outreach with local schools and accross the country,
+          speaking about my experiences studying at university
+      - point: >
+          Working with and training other ambassadors, such that events are
+          conducted efficiently
+  - role: Waiter
+    location: Happy Gathering Restaurant, Cardiff
+    start: Aug. 2016
+    end: Aug. 2018
+    points:
+      - point: >
+          Worked efficiently under pressure in close collaboration with team
+          members to serve guests for lunch and dinner service, taking orders and
+          preparing drinks
+      - point: >
+          Serving private functions providing a buffer and banquet service
+      - point: >
+          Responsibility over training new staff members and weekly organisation
+          of menus and stock
+volunteering:
+  - role: Computer Science Society
+    location: "<a href='https://cssbham.com'>cssbham.com</a>"
+    start: March 2019
+    end: Present
+    points:
+      - point: Publicity Rep (2019/20)
+        subpoints:
+          - subpoint: Publicising and marketing society events throughout the year
+      - point: Industrial Liaison (2020/21)
+  - role: HackTheMidlands
+    location: "Organiser - <a href='https://hackthemidlands.com'>hackthemidlands.com</a>"
+    start: May 2019
+    end: Present
+    points:
+      - point: >
+          Organiser of inclusive hackathon based in the West Midlands
+      - point: >
+          Responsibility over marketing the event through social media
+      - point: >
+          Coordinate the event logistically, including working with over 20
+          sponsors and partners, and aquiring merchandise
+      - point: >
+          Participating in local school outreach to encourage younger students
+          to attend more tech events
+  - role: EPS Society Awards Organising Committee
+    location: College of Engineering and Physical Sciences, University of Birmingham
+    start: Oct. 2019
+    end: June 2020
+    points:
+      - point:
+  - role: EPS Community EDI Committee
+    location: College of Engineering and Physical Sciences, University of Birmingham
+    start: June 2019
+    end: June 2020
+    points:
+      - point: >
+          Representing Computer Science Society in Equality, Diversity, and Inclusivity
+      - point: >
+          Coordinating with 37 other societies to engage minority groups in
+          more activities at University and taclking related issues
+  - role: Head Team
+    location: Porthcawl Comprehensive School
+    start: June 2016
+    end: May 2017
+    points:
+      - point: >
+          Represented the school and students, and organised events while
+          liaising with the school managemnet and local organisations
+      - point: Raised over £3700 for different charities over the year

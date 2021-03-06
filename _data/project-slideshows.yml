@@ -1,0 +1,22 @@
+- set: likkanchung
+  slides:
+    - url: /assets/projects/likkanchung/website-v1-1.JPG
+      caption: Version 1 - Summer 2016
+    - url: /assets/projects/likkanchung/website-v1-2.JPG
+      caption: Version 1 - Summer 2016
+    - url: /assets/projects/likkanchung/website-v2.jpg
+      caption: Version 2
+- set: drift
+  slides:
+    - url: /assets/projects/drift/drift-1.jpg
+    - url: /assets/projects/drift/drift-2.jpg
+    - url: /assets/projects/drift/drift-3.jpg
+    - url: /assets/projects/drift/drift-4.jpg
+    - url: /assets/projects/drift/drift-5.jpg
+    - url: /assets/projects/drift/drift-6.jpg
+    - url: /assets/projects/drift/drift-7.jpg
+    - url: /assets/projects/drift/drift-8.jpg
+    - url: /assets/projects/drift/drift-9.jpg
+    - url: /assets/projects/drift/drift-10.jpg
+    - url: /assets/projects/drift/drift-11.jpg
+    - url: /assets/projects/drift/drift-12.jpg

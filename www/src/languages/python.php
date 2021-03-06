@@ -1,1 +1,0 @@
-<span class="language border border-success rounded">&nbsp;Python&nbsp;</span>

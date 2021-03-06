@@ -1,0 +1,28 @@
+---
+layout: default
+title: Blogs
+#
+---
+
+<div class="page">
+  <div class="container header-title">
+    <h1>Blogs</h1>
+  </div>
+
+  <div class="container page-section">
+    {% assign blogs = site.blogs | sort: "date" | reverse %}
+    {% for item in blogs %}
+      <a href="{{item.url}}" class="page-card-link text-dark">
+        <div class="card cv-card">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ item.date | date: "%A, %e %B %Y" }}</h6>
+            <p class="card-text">
+              {{ item.excerpt }}
+            </p>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</div>

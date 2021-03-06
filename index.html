@@ -1,0 +1,197 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+title: Likkan Chung
+---
+
+<div class="hero">
+  <div class="hero-content">
+    <img src="/assets/img/profile.jpg" alt="">
+    <h1>{{site.title}}</h1>
+    <h2>{{site.subtitle}}</h2>
+  </div>
+</div>
+
+<div class="container home-section about">
+  <h2>About Me</h2>
+  <p>{{site.about}}</p>
+</div>
+
+<div class="container home-section cv">
+  <h2>CV</h2>
+  <p>This is a brief outline of what I have done. The <a href="cv.html">CV</a> page lists out all of these in more detail.</p>
+
+  <h3>Education</h3>
+  {% assign cv = site.data.cv %}
+  <ul>
+    {% assign items = cv.education %}
+    {% for i in (0..4) %}
+      {% assign s = items | size %}
+      {% if i < s %}
+        {% assign item = items[i] %}
+        <li><b>{{ item.name }},</b> {{ item.school }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h3>Work Experience</h3>
+  <ul>
+    {% assign items = cv.employment %}
+    {% for i in (0..4) %}
+      {% assign s = items | size %}
+      {% if i < s %}
+        {% assign item = items[i] %}
+        <li><b>{{ item.role }},</b> {{ item.location }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h3>Volunteering</h3>
+  <ul>
+    {% assign items = cv.volunteering %}
+    {% for i in (0..4) %}
+      {% assign s = items | size %}
+      {% if i < s %}
+        {% assign item = items[i] %}
+        <li><b>{{ item.role }},</b> {{ item.location }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="container home-section home-section-projects">
+  <div class="carousel slide" data-ride="carousel" id="projects-carousel">
+    <div class="row">
+      <div class="col-6">
+        <h2>Projects</h2>
+      </div>
+      <div class="col-6 text-md-right lead carousel-buttons">
+        {% assign projects = site.projects | sort: "date" | reverse %}
+        {% assign projsize = projects | size | minus: 0 | at_most: 9 %}
+        {% if projsize > 3 %}
+          <a href="#projects-carousel" class="btn btn-outline-secondary carousel-control" role="button" data-slide="prev"><</a>
+          <a href="#projects-carousel" class="btn btn-outline-secondary carousel-control" role="button" data-slide="next">></a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card-deck">
+          {% for i in (0..projsize) %}
+            {% assign s = projsize %}
+            {% if i < s %}
+              {% assign post = projects[i] %}
+              {% assign mod = i | modulo: 3 %}
+              {% if mod == 0 and i != 0 %}
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-deck">
+
+              {% endif %}
+
+              <div class="card">
+                <a href="{{post.url}}" class="card-link text-dark">
+                  <div class="card-body">
+                    <h5 class="card-title">{{post.title}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{post.date | date: "%b %Y"}}</h6>
+                    <p class="card-text">
+                      {{post.excerpt | truncate: 200 }}
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      {% if projsize == 9 %}
+        <div class="carousel-item">
+          <div class="card-deck">
+            <div class="card">
+              <a href="projects.html" class="card-link text-dark">
+                <div class="card-body">
+                  <h5 class="card-title">More Projects...</h5>
+                  <p class="card-text">
+                    Click here to find more Projects...
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="container home-section home-section-blogs">
+  <div class="carousel slide" data-ride="carousel" id="blogs-carousel">
+    <div class="row">
+      <div class="col-6">
+        <h2>Blogs</h2>
+      </div>
+      <div class="col-6 text-md-right lead carousel-buttons">
+        {% assign blogs = site.blogs | sort: "date" | reverse %}
+        {% assign blogsize = blogs | size | minus: 0 | at_most: 9 %}
+        {% if blogsize > 3 %}
+          <a href="#blogs-carousel" class="btn btn-outline-secondary carousel-control" role="button" data-slide="prev"><</a>
+          <a href="#blogs-carousel" class="btn btn-outline-secondary carousel-control" role="button" data-slide="next">></a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card-deck">
+          {% for i in (0..blogsize) %}
+            {% assign s = blogsize %}
+            {% if i < s %}
+              {% assign post = blogs[i] %}
+              {% assign mod = i | modulo: 3 %}
+              {% if mod == 0 and i != 0 %}
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-deck">
+
+              {% endif %}
+
+                <div class="card">
+                  <a href="{{post.url}}" class="card-link text-dark">
+                    <div class="card-body">
+                      <h5 class="card-title">{{post.title}}</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">{{post.date | date: "%A, %e %B %Y"}}</h6>
+                      <p class="card-text">
+                        {{post.excerpt | truncate: 200 }}
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      {% if blogsize == 9 %}
+        <div class="carousel-item">
+          <div class="card-deck">
+            <div class="card">
+              <a href="blogs.html" class="card-link text-dark">
+                <div class="card-body">
+                  <h5 class="card-title">More Blog Posts...</h5>
+                  <p class="card-text">
+                    Click here to find more Blog Posts...
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

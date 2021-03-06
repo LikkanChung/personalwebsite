@@ -1,0 +1,41 @@
+<div id="project-page-carousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+
+    {% assign iset = include.set %}
+    {% for set in site.data.project-slideshows %}
+      {% if set.set == iset %}
+        {% assign slides = set.slides %}
+        {% assign i = 0 %}
+        {% for slide in slides %}
+          <li data-target="#project-page-carousel" data-slide-to="{{i}}" class="{% if i == 0 %}active{% endif %}"></li>
+          {% assign i = i | plus: 1 %}
+        {% endfor %}
+
+  </ol>
+  <div class="carousel-inner">
+
+        {% assign firstslide = slides | first %}
+        {% for slide in slides %}
+
+        <div class="carousel-item {% if slide == firstslide%}active{%endif%}">
+          <img src="{{slide.url}}" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>{{slide.caption}}</h5>
+            <p>{{slide.description}}</p>
+          </div>
+        </div>
+
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+
+  </div>
+  <a class="carousel-control-prev" href="#project-page-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#project-page-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
