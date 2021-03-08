@@ -34,7 +34,7 @@ about: |
   an organiser for <a href="https://hackthemidlands.com">HackTheMidlands</a>, and a Student Ambassador for the School of Computer Science.
 
 # Build settings
-theme: minima
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
